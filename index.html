@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- main section start -->
+    <section>
+        <div class="container">
+            <div class="calculator">
+                <h2>calculator</h2>
+            </div>
+            <div class="pluse">
+                <h2>25+5=</h2>
+                <h2 class="joge"></h2>
+            </div>
+            <button onclick="addnamber();">slution</button>
+
+            <div class="minus">
+                <h2>25-5=</h2>
+                <h2 class="biog"></h2>
+            </div>
+            <button onclick="minusnamber();">slution</button>
+            <div class="division">
+                <h2>25/5=</h2>
+                <h2 class="vag"></h2>
+            </div>
+            <button onclick="divisionnamber();">slution</button>
+            <div class="multiplication">
+                <h2>25*5=</h2>
+                <h2 class="gun"></h2>
+            </div>
+            <button onclick="multiplicationnnamber();">slution</button>
+            <div class="vagsesnumber">
+                <h2>25%5=</h2>
+                <h2 class="vagses"></h2>
+            </div>
+            <button onclick="vagsesnumber();">slution</button>
+        </div>
+    </section>
+    <!-- Javascript start -->
+    <script>
+        function addnamber() {
+            var x = 25;
+            var y = 5;
+            var add = x + y;
+            document.getElementsByClassName('joge')[0].innerHTML = add;
+        }
+
+        function minusnamber() {
+            var x = 25;
+            var y = 5;
+            var add = x - y;
+            document.getElementsByClassName('biog')[0].innerHTML = add;
+        }
+
+        function divisionnamber() {
+            var x = 25;
+            var y = 5;
+            var add = x / y;
+            document.getElementsByClassName('vag')[0].innerHTML = add;
+        }
+
+        function multiplicationnnamber() {
+            var x = 25;
+            var y = 5;
+            var add = x * y;
+            document.getElementsByClassName('gun')[0].innerHTML = add;
+        }
+
+        function vagsesnumber() {
+            var x = 25;
+            var y = 5;
+            var add = x % y;
+            document.getElementsByClassName('vagses')[0].innerHTML = add;
+        }
+    </script>
+</body>
+
+</html>
